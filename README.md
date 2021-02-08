@@ -38,9 +38,10 @@ container.appendChild(h1);
 h1.appendChild(text);
 ```
 Estructura html
-![imgGitHub]()
+![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/estructurahtml.png)
+
 Resultado en el navegador
-![imgGitHub]()
+![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
 
 ### Agregar task
 _pequeña explicación_

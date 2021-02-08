@@ -62,4 +62,46 @@ var ul =  createNode('ul');
 list.appendChild(ul);
 
 document.body.appendChild(app);
-console.log(app)
+console.log(app);
+
+
+//Variables
+var taskList = document.getElementById('task-list');
+
+///EventListeners
+eventListeners();
+
+function eventListeners() {
+    //Envio al formulario
+    document.querySelector('#form').addEventListener('submit', addTask);
+}
+
+//Funciones
+
+//Añadir task
+function addTask(event) {
+    event.preventDefault();
+    //Leer el valor del text area
+    var task = document.getElementById('task').value;
+    //Validar informacion del task
+    if (task != ""){
+        //Crear boton de eliminar
+        var deleteButton = document.createElement('a');
+        deleteButton.classList = 'delete-task';
+        deleteButton.innerText = 'x';
+        //Crear elemento y añadir el elemento a la lista
+        var ul =  document.querySelector('ul');
+        var li = document.createElement('li');
+        li.innerText = task;
+        //Añade el boton de borrar al task
+        li.appendChild(deleteButton);
+        //Añade el task a la lista
+        taskList.appendChild(ul);
+        ul.appendChild(li);
+
+        //Reinicio del formulario
+        document.getElementById('task').value = "";
+    } else {
+        alert("Please, add a task");
+    }
+}

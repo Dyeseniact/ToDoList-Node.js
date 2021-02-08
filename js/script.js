@@ -105,3 +105,14 @@ function addTask(event) {
         alert("Please, add a task");
     }
 }
+
+// Marcar tarea completada 
+var ulList = document.querySelector('ul');
+ulList.addEventListener('click',function(event){
+
+    if(event.target.tagName === "LI"){
+        //Alternamos el nombre de la clase por el de "checked".
+        event.target.classList.toggle('checked');
+
+    }
+},false);

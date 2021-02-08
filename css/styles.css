@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    color: rgb(62, 107, 145);
+    background-color: #c6dfff;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(62, 107, 145);
+    background: #c6dfff;
+}
+
+#contenido {
+    margin-top: 40px;
+}
+
+.task {
+    background: #c6dfff;
+    color: rgb(62, 107, 145);
+    font-size: 30px;
+}
+
+.delete-task,
+.delete-task:hover {
+    float: right;
+    cursor: pointer;
+    color: rgb(231, 100, 90);
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 0px !important;
+
+}
+
+ul li {
+    position: relative;
+    background-color: #f1eeee;
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px 6px 10px 30px;
+    transition: 3s;
+    /* Que no pueda seleccionar la lista*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background-color: #c6dfff;
+    color: rgb(62, 107, 145);
+}
+
+ul li.checked {
+    background: rgb(62, 107, 145);
+    color: white;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0px 2px 2px 0px;
+    top: 10px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 10px;
+}
+
+ul li:hover {
+    background-color: #ddd;
+}

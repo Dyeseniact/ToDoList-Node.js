@@ -38,12 +38,9 @@ container.appendChild(h1);
 h1.appendChild(text);
 ```
 Estructura html
-
-![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/estructurahtml.png)
-
+![imgGitHub]()
 Resultado en el navegador
-
-![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
+![imgGitHub]()
 
 ### Agregar task
 Se genera la funcion addTask que obtiene el valor ingresado, el task se agrega en una lista, tambien se crean nuevos nodos para visualizar cada task.

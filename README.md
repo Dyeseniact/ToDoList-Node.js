@@ -76,7 +76,7 @@ function addTask(event) {
 }
 ```
 ### Completar task
-Agregamos al codigo la parte de marcar tarea completada, al realizar click en algun elemento de la lista alternando el nombre de la clase por la de "checked".
+Agregamos al codigo la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked".
 ```javascript
 var ulList = document.querySelector('ul');
 ulList.addEventListener('click',function(event){

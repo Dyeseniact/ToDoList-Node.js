@@ -43,9 +43,34 @@ Resultado en el navegador
 ![imgGitHub]()
 
 ### Agregar task
-_pequeña explicación_
+Se genera la funcion addTask que obtiene el valor ingresado, el task se agrega en una lista, tambien se crean nuevos nodos para visualizar cada task.
 ```javascript
-algún codigo
+function addTask(event) {
+    event.preventDefault();
+    //Leer el valor del text area
+    var task = document.getElementById('task').value;
+    //Validar informacion del task
+    if (task != ""){
+        //Crear boton de eliminar
+        var deleteButton = document.createElement('a');
+        deleteButton.classList = 'delete-task';
+        deleteButton.innerText = 'x';
+        //Crear elemento y añadir el elemento a la lista
+        var ul =  document.querySelector('ul');
+        var li = document.createElement('li');
+        li.innerText = task;
+        //Añade el boton de borrar al task
+        li.appendChild(deleteButton);
+        //Añade el task a la lista
+        taskList.appendChild(ul);
+        ul.appendChild(li);
+
+        //Reinicio del formulario
+        document.getElementById('task').value = "";
+    } else {
+        alert("Please, add a task");
+    }
+}
 ```
 ### Completar task
 _pequeña explicación_

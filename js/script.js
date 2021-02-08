@@ -74,6 +74,8 @@ eventListeners();
 function eventListeners() {
     //Envio al formulario
     document.querySelector('#form').addEventListener('submit', addTask);
+    //Borrar task
+    taskList.addEventListener('click', deleteTask);
 }
 
 //Funciones
@@ -116,3 +118,12 @@ ulList.addEventListener('click',function(event){
 
     }
 },false);
+
+//elimina el task del DOM
+function deleteTask(e) {
+    e.preventDefault();
+    if (e.target.className === 'delete-task') {
+        e.target.parentElement.remove();
+        deleteTaskLocalStorage(e.target.parentElement.textContent);
+    }
+}

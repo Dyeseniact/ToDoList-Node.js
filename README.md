@@ -71,6 +71,6 @@ algún codigo
 Algun screen
 ![imgGitHub]()
 Miralo por ti mismo
- _url_
+ _https://trabucoaluca.github.io/To-Do-List/_
  
  

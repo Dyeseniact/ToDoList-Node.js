@@ -91,9 +91,15 @@ ulList.addEventListener('click',function(event){
 Resultado en el navegador.
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/Task-completed.png)
 ### Eliminar task
-_pequeña explicación_
+Se agrega la función deleteTask para que al presionar el botón que se encuentra al lado del nombre del elemento elimine dicho task.
 ```javascript
-algún codigo
+function deleteTask(e) {
+    e.preventDefault();
+    if (e.target.className === 'delete-task') {
+        e.target.parentElement.remove();
+        deleteTaskLocalStorage(e.target.parentElement.textContent);
+    }
+}
 ```
 ### Estilo
 _pequeña explicación_

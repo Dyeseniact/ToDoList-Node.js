@@ -61,10 +61,6 @@ sixcolumns2.appendChild(list);
 var ul =  createNode('ul');
 list.appendChild(ul);
 
-document.body.appendChild(app);
-console.log(app);
-
-
 //Variables
 var taskList = document.getElementById('task-list');
 
@@ -132,18 +128,12 @@ function deleteTask(e) {
     }
 }
 
-
-
 function showError(error){
-
     //se crea la etiqueta contenedora del mensaje
     const errorMessage = document.createElement('p');
     errorMessage.textContent = error;
     errorMessage.classList.add('error');
     //insertarlo en el contenido     
     container.appendChild(errorMessage);
-    setTimeout(() => {
-        //elimina la alerta despues de 3 segundos
-        errorMessage.remove();
-    }, 3000);
+    
 }

@@ -111,6 +111,8 @@ Resultado en el navegador.
 
 
 ### LocalStorage
+
+![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
 _pequeña explicación_
 ```javascript
 algún codigo

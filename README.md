@@ -87,7 +87,7 @@ function deleteTask(e) {
 }
 ```
 ### Completar task
-_Agregamos al codigo la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked"._
+_Agregamos al código la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked"._
 ```javascript
 var ulList = document.querySelector('ul');
 ulList.addEventListener('click',function(event){
@@ -111,7 +111,7 @@ Resultado en el navegador.
 
 
 ### Se agrega mensaje
-Se agrega codigo para mandar a imprimir en pantalla un mensaje indicando que la tarea no puede ir vasia
+Se agrega código para mandar a imprimir en pantalla un mensaje indicando que la tarea no puede ir vacía
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/msjError.png)
 ```javascript
 

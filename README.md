@@ -110,12 +110,23 @@ Resultado en el navegador.
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/Task-completed.png)
 
 
-### LocalStorage
-
-![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
-_pequeña explicación_
+### Se agrega mensaje
+Se agrega codigo para mandar a imprimir en pantalla un mensaje indicando que la tarea no puede ir vasia
+![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/msjError.png)
 ```javascript
-algún codigo
+
+function showError(error){
+    //se crea la etiqueta contenedora del mensaje
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = error;
+    errorMessage.classList.add('error');
+    //insertarlo en el contenido     
+    container.appendChild(errorMessage);
+    setTimeout(() => {
+        //elimina la alerta despues de 3 segundos
+        errorMessage.remove();
+    }, 3000);
+}
 ```
 ## Resultado final 
 Algun screen

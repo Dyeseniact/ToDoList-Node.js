@@ -46,7 +46,7 @@ Resultado en el navegador
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
 
 ### Agregar task
-_Se genera la funcion addTask que obtiene el valor ingresado, el task se agrega en una lista, tambien se crean nuevos nodos para visualizar cada task._
+_Se genera la función addTask que obtiene el valor ingresado, el task se agrega en una lista, también se crean nuevos nodos para visualizar cada task._
 ```javascript
 function addTask(event) {
     event.preventDefault();
@@ -87,7 +87,7 @@ function deleteTask(e) {
 }
 ```
 ### Completar task
-_Agregamos al codigo la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked"._
+_Agregamos al código la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked"._
 ```javascript
 var ulList = document.querySelector('ul');
 ulList.addEventListener('click',function(event){
@@ -110,12 +110,23 @@ Resultado en el navegador.
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/Task-completed.png)
 
 
-### LocalStorage
-
-![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
-_pequeña explicación_
+### Se agrega mensaje
+Se agrega código para mandar a imprimir en pantalla un mensaje indicando que la tarea no puede ir vacía
+![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/msjError.png)
 ```javascript
-algún codigo
+
+function showError(error){
+    //se crea la etiqueta contenedora del mensaje
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = error;
+    errorMessage.classList.add('error');
+    //insertarlo en el contenido     
+    container.appendChild(errorMessage);
+    setTimeout(() => {
+        //elimina la alerta despues de 3 segundos
+        errorMessage.remove();
+    }, 3000);
+}
 ```
 ## Resultado final 
 Algun screen

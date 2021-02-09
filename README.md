@@ -130,7 +130,7 @@ function showError(error){
 ```
 ## Resultado final 
 
-![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/imgEnd.png)
+![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/imgEnd2.png)
 Miralo por ti mismo
  _https://trabucoaluca.github.io/To-Do-List/_
  

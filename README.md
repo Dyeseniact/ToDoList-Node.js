@@ -46,7 +46,7 @@ Resultado en el navegador
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
 
 ### Agregar task
-_Se genera la funcion addTask que obtiene el valor ingresado, el task se agrega en una lista, tambien se crean nuevos nodos para visualizar cada task._
+_Se genera la función addTask que obtiene el valor ingresado, el task se agrega en una lista, también se crean nuevos nodos para visualizar cada task._
 ```javascript
 function addTask(event) {
     event.preventDefault();

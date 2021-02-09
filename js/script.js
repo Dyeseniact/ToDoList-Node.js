@@ -135,5 +135,8 @@ function showError(error){
     errorMessage.classList.add('error');
     //insertarlo en el contenido     
     container.appendChild(errorMessage);
-    
+    setTimeout(() => {
+        //elimina la alerta despues de 3 segundos
+        errorMessage.remove();
+    }, 3000);
 }

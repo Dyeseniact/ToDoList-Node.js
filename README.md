@@ -10,7 +10,8 @@
 
 Equipo numero 20
 
-_link video explicativo_ 
+
+_Video Explicativo https://youtu.be/f4zin6TN49g_ 
 
 ## Explicación
 ### Creación de nodos

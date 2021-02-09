@@ -46,7 +46,7 @@ Resultado en el navegador
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/interfazsinestilo.png)
 
 ### Agregar task
-Se genera la funcion addTask que obtiene el valor ingresado, el task se agrega en una lista, tambien se crean nuevos nodos para visualizar cada task.
+_Se genera la funcion addTask que obtiene el valor ingresado, el task se agrega en una lista, tambien se crean nuevos nodos para visualizar cada task._
 ```javascript
 function addTask(event) {
     event.preventDefault();
@@ -75,8 +75,19 @@ function addTask(event) {
     }
 }
 ```
+### Eliminar task
+_Se agrega la función deleteTask para que al presionar el botón que se encuentra al lado derecho del task elimine dicho task._
+```javascript
+function deleteTask(e) {
+    e.preventDefault();
+    if (e.target.className === 'delete-task') {
+        e.target.parentElement.remove();
+        deleteTaskLocalStorage(e.target.parentElement.textContent);
+    }
+}
+```
 ### Completar task
-Agregamos al codigo la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked".
+_Agregamos al codigo la parte de marcar tarea completada, al realizar click en algun elemento de la lista se alterna el nombre de la clase por la de "checked"._
 ```javascript
 var ulList = document.querySelector('ul');
 ulList.addEventListener('click',function(event){
@@ -88,24 +99,17 @@ ulList.addEventListener('click',function(event){
     }
 },false);
 ```
+### Estilo
+_Se agregan los links de los archivos CSS_
+```html
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/styles.css">
+```
 Resultado en el navegador.
 ![imgGitHub](https://github.com/trabucoaluca/To-Do-List/blob/master/img/Task-completed.png)
-### Eliminar task
-Se agrega la función deleteTask para que al presionar el botón que se encuentra al lado derecho del task elimine dicho task.
-```javascript
-function deleteTask(e) {
-    e.preventDefault();
-    if (e.target.className === 'delete-task') {
-        e.target.parentElement.remove();
-        deleteTaskLocalStorage(e.target.parentElement.textContent);
-    }
-}
-```
-### Estilo
-_pequeña explicación_
-```javascript
-algún codigo
-```
+
+
 ### LocalStorage
 _pequeña explicación_
 ```javascript

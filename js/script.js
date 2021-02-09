@@ -104,7 +104,11 @@ function addTask(event) {
         //Reinicio del formulario
         document.getElementById('task').value = "";
     } else {
-        alert("Please, add a task");
+                
+        return showError("Please, add a task");
+        
+
+
     }
 }
 
@@ -126,4 +130,20 @@ function deleteTask(e) {
         e.target.parentElement.remove();
         deleteTaskLocalStorage(e.target.parentElement.textContent);
     }
+}
+
+
+
+function showError(error){
+
+    //se crea la etiqueta contenedora del mensaje
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = error;
+    errorMessage.classList.add('error');
+    //insertarlo en el contenido     
+    container.appendChild(errorMessage);
+    setTimeout(() => {
+        //elimina la alerta despues de 3 segundos
+        errorMessage.remove();
+    }, 3000);
 }

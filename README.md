@@ -1,4 +1,4 @@
-# Todo App
+# Todo App :)
 
 ## Sobre el equipo
 ### Integrantes:
